@@ -89,7 +89,7 @@ Submitted at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"""
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
+    port = int(os.environ.get('PORT', 8080))
     print("🚀 Starting NACC Escalation Form Server...")
     print(f"🌐 Form will be available on port {port}")
     app.run(debug=False, host='0.0.0.0', port=port)
